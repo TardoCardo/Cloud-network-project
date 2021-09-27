@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
-  (Ansible_YAML_files/filebeat-playbook.yml)
+![FILEBEAT PLAYBOOK](Ansible_YAML_files/filebeat-playbook.yml)
 
 This document contains the following details:
 - Description of the Topology
@@ -27,7 +27,7 @@ Load balancing ensures that the application will be highly available, in additio
 - a Jumpbox serves as a secure public facing gateway for a user to connect from outside of the network using a secure shell protocol (SSH)  
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the network and system logs.
-- _Filebeat is used to monitor and collect log data and pushes it to Elasticsearch and/or Logstash where the data can be viewed and indexed_
+- Filebeat is used to monitor and collect log data and pushes it to Elasticsearch and/or Logstash where the data can be viewed and indexed
 - Metricbeat on the other hand collects the metrics "cpu/ram usage, network utilization" of the operating system and servers and forwards them to Elasticsearch/Logstash so that the adminstrator can see in realtime the status  of these componets.
 
 The configuration details of each machine may be found below.
@@ -83,8 +83,8 @@ This ELK server is configured to monitor the following machines:
 | web-3 |  10.0.0.7               |
 
 We have installed the following Beats on these machines:
-!(Ansible_YAML_files/filebeat-playbook.yml)
-!(Ansible_YAML_files/metricbeat_playbook.yml)
+![FILEBEAT PLAYBOOK](Ansible_YAML_files/filebeat-playbook.yml)
+![METRICBEAT PLAYBOOK](Ansible_YAML_files/metricbeat_playbook.yml)
 
 These Beats allow us to collect the following information from each machine:
 - Filebeat allows for the forwarding of log data to to Elasticsearch/Logstash. Once data has been transported the user is able to acces and read this data in a GUI (graphical user interface)
