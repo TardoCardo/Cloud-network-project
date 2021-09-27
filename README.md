@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
-  - (Ansible_YAML_files/filebeat-playbook.yml)
+  (Ansible_YAML_files/filebeat-playbook.yml)
 
 This document contains the following details:
 - Description of the Topology
@@ -83,8 +83,8 @@ This ELK server is configured to monitor the following machines:
 | web-3 |  10.0.0.7               |
 
 We have installed the following Beats on these machines:
-- (Ansible_YAML_files/filebeat-playbook.yml)
-- (Ansible_YAML_files/metricbeat_playbook.yml)
+!(Ansible_YAML_files/filebeat-playbook.yml)
+!(Ansible_YAML_files/metricbeat_playbook.yml)
 
 These Beats allow us to collect the following information from each machine:
 - Filebeat allows for the forwarding of log data to to Elasticsearch/Logstash. Once data has been transported the user is able to acces and read this data in a GUI (graphical user interface)
